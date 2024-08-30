@@ -1,0 +1,1491 @@
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #004c99;
+}
+
+*{
+  transition: ease-in-out 1s;
+}
+
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  
+  
+}
+
+.Splashscreen-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: logo ease-in-out 2s;
+}
+
+.auth-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  width: 400px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  gap: 20px;
+  border: #004c99 2px solid;
+  
+  
+}
+.auth-container h1{
+  font-size: 40px;
+  font-weight: bold;
+  color: #004c99;
+  font-family: sans-serif;
+}
+
+.auth-container form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.auth-container input{
+  width: 130%;
+  height: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: whitesmoke;
+ 
+}
+.auth-container button{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #004c99;
+  color: whitesmoke;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth-container label{
+  font-size: 20px;
+  font-weight: 500;
+  color: (21, 21, 21);
+  font-family: sans-serif;
+  margin-bottom: 10px;
+
+}
+.auth-container span{
+  font-size: 20px;
+  font-weight: 200;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+.auth-container Link{
+  font-size: 20px;
+  font-weight: bold;
+  color: #004c99;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.Home h1{
+  color: #004c99;
+  font-family: sans-serif;
+  font-size: 40px;
+
+  margin-left: 20px;
+}
+
+.Home div Link{
+  text-decoration: none;
+}
+
+.Home-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  background-color: rgb(130, 207, 229);
+  padding: 5px;
+
+  & h1{
+    font-size: 35px;
+  }
+
+  & .profile{
+    font-size: 25px;
+    color: #004c99;
+    font-family: sans-serif;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+
+
+    & .profileicon{
+      margin-top: 5px;
+      font-size: 30px;
+      color: white;
+      font-family: sans-serif;
+      font-weight: 600;
+      margin-right: 10px;
+
+    }
+  
+
+ 
+  }
+
+  
+}
+.Home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.Home-content h1{
+  font-size: 30px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.Home-content-first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 200px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+}
+.Home-content-first input{
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: black 2px solid;
+}
+.Home-content-first button{
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #004c99;
+  color: whitesmoke;
+  border: none; 
+  margin-top: 20px;
+}
+
+.Home-content-second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.Home-content-second input{
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: black 2px solid;
+  margin-bottom: 20px;
+}
+.Home-content-second label{
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.Home-content-second button{
+  width: 80%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #004c99;
+  color: whitesmoke;
+  border: none;
+  margin-top: 20px;
+
+}
+
+.type-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+ 
+
+}
+
+
+.poster{
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  & button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    top: 18%;
+    right: 26%;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+
+  }
+}
+
+.Pimage{
+  width: 50%;
+  height: 70%;
+  border-radius: 20px;
+  animation: logo ease-in-out 1s;
+}
+
+.type-container h1{
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  animation: logo ease-in-out 1s;
+}
+
+.type-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.327);
+  padding: 50px;
+  border-radius: 30px;
+  animation: slideUp ease-in-out 1s;
+}
+
+.types{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #004c99;
+  padding: 5px;
+  border: #f7f7f7 5px solid;
+  animation: logo ease-in-out 1s;
+}
+
+.type-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.link{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.name{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin: 5px;
+
+  & span{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 5px;
+   
+    color: #333;
+    font-family: sans-serif;
+  }
+}
+
+.name p{
+  margin-left: 10px;
+}
+
+.name p span{
+  font-size: 30px;
+  font-weight: bold;
+  color: #82cfe5;
+}
+
+.maps {
+  width: 65%;
+  height: 100vh;
+  z-index: 23;
+  border: 2px solid whitesmoke;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.mapSection {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #fbfbfb; }
+
+.mapSection button{
+  position: absolute;
+  z-index: 32;
+  top: 20px; 
+  right: 20px; 
+  background-color: white;
+  font-size: 24px; 
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mapSection button:hover{
+  background-color: red;
+}
+
+.map-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #333; 
+  height: 50%;
+  background-color: #a0e7fa;
+  width: 100%;
+
+  & h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #004c99;
+    font-family: sans-serif;
+  }
+}
+
+  .loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader h1{
+    font-size: 48px;
+    color: #82cfe5;
+    font-family: sans-serif;
+
+  }
+
+  
+  .AddSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+  
+    border-radius: 10px;
+}
+
+.AdminHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.Add{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #82cfe5;
+  font-size: 70px;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+  border: #82cfe5 5px solid;
+  transition: ease-in-out .5s;
+  & span{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: sans-serif;
+  }
+  &:hover{
+    background-color: #82cfe5;
+    color: #004c99;
+    transition: ease-in-out .5s;
+  }
+}
+
+.AddDriver{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  background-color: #004c99;
+  height: 70vh;
+  border-radius: 20px;
+  animation: logo ease-in-out .5s;
+ 
+
+
+  & h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+
+  }
+
+  & button{
+    width: 90%;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: #004c99;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  & .driverContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8ec3f8;
+    width: 90%;
+    
+    margin: 0 auto;
+    padding: 20px;
+    border: #82cfe5 5px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+  }
+}
+
+.driverInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+
+  & label{
+       font-size: 20px;
+       margin-right: 10px;
+       font-family: sans-serif;
+
+  }
+
+  & input{
+    width: 80%;
+    height: 40px;
+    
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #bfe6f1;
+    text-align: center;
+  }
+
+  & select{
+    width: 80%;
+    height: 40px;
+    
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #bfe6f1;
+    text-align: center;
+  }
+  
+  & span {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px;
+
+
+  }
+}
+
+
+.content{
+
+ 
+  margin: 10px;
+  margin-left: 0;
+
+ 
+}
+
+
+.sidebarContainer{
+  width: 600px;
+  border: #004c99 2px solid;
+  margin: 10px;
+}
+
+.driverlist{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #004c99;
+  margin: 10px;
+  border-radius: 20px
+  ;
+
+  & h2 {
+    color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+  }
+}
+
+
+
+.sidebar {
+  width: 600px;
+ 
+  background-color: #004c99;
+  color: #fff;
+  border-radius: 20px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+
+  & h2{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+
+  }
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+
+
+}
+
+.nav-item {
+  margin: 20px 0;
+}
+
+.nav-item:hover{
+  background-color: #82cfe5;
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  color: #004c99;
+}
+
+
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  & h1{
+    font-size: 30px;
+    color: #004c99;
+    font-family: sans-serif;
+  }
+
+}
+
+.other-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 600px;
+  margin: 10px;
+}
+
+.card-temp{
+  width: 220px;
+  height: 190px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #004c99;
+  margin-top: 10px;
+  border-radius: 20px;
+  animation: logo ease-in-out 1s;
+ 
+
+  & span {
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+     font-family: sans-serif;
+
+    
+     }
+
+    
+
+     
+
+
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+   gap: 5px;
+  }
+
+.row-card-full{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 100px;
+  background-color: #004c99;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  animation: logo ease-in-out 1s;
+
+  & span {
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+     font-family: sans-serif;
+  }
+}
+
+.row-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #004c99;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  animation: logo ease-in-out 1s;
+
+  & span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+     font-family: sans-serif;
+  }
+}
+
+.card-time{
+  width: 220px;
+  height: 180px;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #004c99;
+  margin-top: 10px;
+ 
+  border-radius: 20px;
+  animation: logo ease-in-out 1s;
+
+  & span {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+     font-family: sans-serif;
+
+    
+     }
+ }
+
+ .menu{
+  position: absolute;
+  top: 10px;
+  right: 50%;
+ }
+
+ .Home-profile{
+
+   width: 400px;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 20px;
+   padding: 10px;
+
+   & span{
+     
+      font-size: 20px;
+      font-weight: 600;
+      font-family: sans-serif;
+   }
+   
+
+ }
+
+ .DriverDashboadContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+
+  & h1  {
+    font-size: 30px;
+    font-weight: 600;
+    color: #004c99;
+    margin-top: 20px;
+    font-family: sans-serif;
+  }
+
+  & h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #004c99;
+    margin-top: 10px;
+    font-family: sans-serif;
+  }
+
+    & .driverNav{
+      width: 100%;
+      height: 50px;
+      background-color: #004c99;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & h2 {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 500;
+        margin-left: 10px;
+        font-family: sans-serif;
+      }
+
+      & span{
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        margin-right: 10px;
+        font-family: sans-serif;
+
+      }
+
+      & .profile{
+        display: flex;
+        align-items: center;
+
+        & .profileicon{
+          font-size: 25px;
+          margin-right: 2px;
+          color: white;
+          margin-top: 5px;
+        }
+
+      }
+
+    
+    }
+     
+ }
+
+ .idCardContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0f0f0ea;
+
+  & .back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+
+  & .LogOut{
+    margin-top: 10px;
+    background-color: #004c99;
+    width: 90%;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  & .LogOut:hover{
+    background-color: rgb(254, 82, 82);
+  }
+
+  & .IdCard{
+    width: 25%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 30px;
+    animation: logo ease-in-out 1s;
+
+
+    
+
+    & .idCardHeader{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 60%;
+      background-color: #004c99;
+      margin-top: 0;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+
+
+      & img {
+        
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 20px;
+      }
+
+      & h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+
+      }
+
+    }
+
+    & .idCardFooter{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & .driverinfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        & span {
+          font-size: 20px;
+          margin-top: 5px;
+          font-family: sans-serif;
+          font-weight: 500;
+          margin-top: 10px;
+        }
+      }
+
+    }
+
+  }
+
+ }
+
+ .motivation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  
+
+  & .motivationCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    background-color: #004c99;
+    margin: 10px;
+    border-radius: 20px;
+
+    & span {
+      font-size: 25px;
+      margin-top: 5px;
+      font-family: sans-serif;
+      font-weight: 600;
+      margin: 10px;
+      color: white;
+      text-align: center;
+    }
+  }
+
+ }
+
+ .BusDetail{
+  margin-top: 20px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ 
+  
+ }
+
+ .BusDetailCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 220px;
+  background-color: #004c99;
+  margin: 10px;
+  border-radius: 20px;
+
+  & h3{
+    font-size: 25px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    color: white;
+  }
+  
+  & p{
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin: 10px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+  }
+
+  & span{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    margin-top: 10px;
+  }
+
+  & button {
+    background-color: #ffffff;
+    width: 90%;
+    color: #004c99;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+
+
+  
+ }
+
+ .LogoutContainer{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-left: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f0f0f0ea;
+
+
+  & .Home-profile{
+    animation: logo ease-out .5s;
+  }
+ 
+
+  & .stay{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    margin-top: 20px;
+
+  }
+
+  & button{
+   
+    background-color: #004c99;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-top: 20px;
+
+    & botton:hover{
+      background-color: #013562;
+    }
+
+
+  }
+
+
+
+
+ }
+
+
+.BusGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+ 
+
+
+}
+
+
+
+
+
+.swap{
+  font-size: 50px;
+}
+
+@media (max-width: 1220px) {
+
+
+  *{
+    transition: ease-in-out 1s;
+  }
+
+  .type-container{
+    overflow-y: scroll;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .type-list{
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 10px;
+    margin-top: 20px;
+
+   } 
+   .Home-content-first, .Home-content-second{
+    width: 80%;
+
+  }
+
+
+
+
+  
+
+}
+
+
+@media (max-width: 480px) {
+
+  *{
+    transition: ease-in-out 1s;
+  }
+
+  .BusDetail{
+    width: 100%;
+    grid-template-columns: repeat(1,1fr);
+  
+  }
+
+  .name{
+    font-size: 1.5rem;
+
+    & span {
+      font-size: 1.5rem;
+      margin-left: 10px;
+    }
+  }
+
+  .auth-container {
+    width: 80%; 
+    height: auto;
+  }
+
+  .mapSection{
+    align-items: start;
+  }
+
+  .mapSection{
+    flex-direction: column-reverse;
+  }
+
+  .LogoutContainer{
+    width: 100%;
+    height: 100%;
+    margin-left: 2px;
+  }
+
+  .Home-profile {
+    width: 90%;
+  }
+
+  .maps{
+    width: 100%;
+    height: 50%;
+    border-radius: 0;
+    border: none;
+    margin: 5px;
+  }
+
+  .type-card{
+    width: 90%;
+
+  }
+
+  .Pimage{
+    width: 90%;
+    height: 30%;
+    border-radius: 20px;
+    animation: logo ease-in-out 1s;
+  }
+
+
+  .poster{
+
+
+    & button {
+      width: 20px;
+      height: 20px;
+      top: 36%;
+      right: 8%;
+    }
+
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .other-info{
+    display: none;
+  }
+ .admin{
+  width: 100%;
+  height: 100svh;
+ }
+
+  .types{
+    width: 50px;
+    height: 50px;
+  }
+  .link{
+    font-size: 10px;
+  }
+
+  .type-list{
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .Home-nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+
+    & h1{
+      font-size: 25px;
+    }
+
+    & .profile{
+      font-size: 20px;
+      color: #004c99;
+      font-family: sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+
+
+      & .profileicon{
+        margin-top: 5px;
+        font-size: 25px;
+        color: #004c99;
+        font-family: sans-serif;
+        font-weight: 600;
+
+      }
+    }
+  }
+
+  .Home-content-first, .Home-content-second{
+    width: 85%;
+
+  }
+
+  .driverNav{
+    justify-content: center;
+  }
+
+  
+  .idCardContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0ea;
+  
+    & .IdCard{
+      width: 90%;
+      height: 70%;
+    }
+  }
+
+  .DriverDashboadContainer{
+
+    overflow-x: hidden;
+
+    & h1{
+      font-size: 15px;
+      text-align: center;
+      margin: 10px;
+    }
+    & .motivationCard{
+      width: 300px;
+
+      & span{
+        font-size: 15px;
+      }
+
+    }
+  }
+
+
+  
+
+  .BusDetailCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 220px;
+    background-color: #004c99;
+    margin: 10px;
+    border-radius: 20px;
+  
+    & h3{
+      font-size: 20px;
+      margin-top: 5px;
+      font-family: sans-serif;
+      font-weight: 600;
+      margin: 10px;
+      color: white;
+    }
+    
+    & p{
+      font-size: 15px;
+      margin-top: 5px;
+      font-family: sans-serif;
+      font-weight: 400;
+      margin: 10px;
+      color: white;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 20px;
+  
+    }
+  
+    & span{
+      font-size: 20px;
+      font-family: sans-serif;
+      font-weight: 400;
+      color: whitesmoke;
+      margin-top: 10px;
+    }
+  
+  
+  
+    
+   }
+
+
+
+   
+
+
+
+  
+
+
+}
+
+
+@keyframes logo {
+  0%{
+    transform: scale(0);
+
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0%{
+    transform: translateY(600px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
