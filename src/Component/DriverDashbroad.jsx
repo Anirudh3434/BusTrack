@@ -153,11 +153,11 @@ function DriverDashboard() {
                             <span>Type: {element.model}</span>
                             <div className='row'>
                                 <p>{element.time}</p>
-                                <p>{element.date}</p>
+                               
                             </div>
 
                           
-                            {element.time <= time && (
+                            {element.time >= time && (
                                 <button onClick={() => { startRide(element.$id) }}>
                                    Start
                                 </button>

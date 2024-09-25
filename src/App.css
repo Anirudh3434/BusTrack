@@ -381,7 +381,7 @@ body{
 
 .maps {
   width: 65%;
-  height: 100vh;
+  height: 130vh;
   z-index: 23;
   border: 2px solid whitesmoke;
   border-radius: 8px; /* Optional: adds rounded corners */
@@ -389,7 +389,7 @@ body{
 
 .mapSection {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -1061,7 +1061,7 @@ body{
   margin-top: 20px;
   width: 95%;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(2,1fr);
  
   
  }
@@ -1070,6 +1070,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center; 
+  width: 300px;
   height: 220px;
   background-color: #004c99;
   margin: 10px;
@@ -1120,7 +1121,9 @@ body{
 
   
  }
-
+ .mobile{
+    display: none;
+ }
  .LogoutContainer{
   width: 100%;
   height: 100vh;
@@ -1418,6 +1421,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center; 
+  
     height: 220px;
     background-color: #004c99;
     margin: 10px;
@@ -1431,6 +1435,8 @@ body{
       margin: 10px;
       color: white;
     }
+
+
     
     & p{
       font-size: 15px;
@@ -1458,8 +1464,41 @@ body{
     
    }
 
+.mobile{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #004c99;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
+  & span {
+    font-size: 25px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
 
+  }
+
+  & .icon {
+    font-size: 50px;
+    color: whitesmoke;
+    margin-bottom: 50px;
+    animation: popup ease-in-out 1s infinite;
+  }
+}
+
+.desktop {
+  display: none;
+}
    
 
 
@@ -1488,4 +1527,17 @@ body{
     transform: translateY(0);
   }
   
+}
+
+@keyframes popup {
+  0%{
+    transform: scale(1);
+
+  }
+  50%{
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

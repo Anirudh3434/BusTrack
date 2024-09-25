@@ -5,6 +5,7 @@ import { TiWeatherSunny } from "react-icons/ti";
 import { IoLocation } from "react-icons/io5";
 import { WiHumidity } from "react-icons/wi";
 import { FaWind } from "react-icons/fa";
+import { GoAlertFill } from "react-icons/go";
 
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
 
@@ -60,7 +61,8 @@ function AdminDashboard() {
     return (
         <div className='AdminMainContainer' style={{ display: 'flex', width: '100%' , height: '100vh', backgroundColor: 'white' }}>
            <Sidebar />
-            <div className='content' style={{  padding: '20px', width: '100%' }}>
+     
+          <div className='content' style={{  padding: '20px', width: '100%' }}>
                 <h1>Admin Dashboard</h1>
              <Outlet>
                 
@@ -109,6 +111,11 @@ function AdminDashboard() {
 
            
             </div>
+     
+          <div className='mobile'>
+            <GoAlertFill className='icon'/>
+            <span>Please switch to Desktop! Admin only for desktop view</span>
+          </div>
         </div>
     );
 }

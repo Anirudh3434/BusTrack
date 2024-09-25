@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import busService from '../../Appwrite/BusDatabase';
 import service from '../../Appwrite/Database';
+import { current } from '@reduxjs/toolkit';
 
 function AddBus() {
   const [busNo, setBusNo] = useState('');
@@ -14,8 +15,8 @@ function AddBus() {
   const [departureDate, setDepartureDate]= useState('');
   const [departureTime, setDepartureTime] = useState('');
 
-  const lat = '';
-  const lng = '';
+  let lat ;
+  let lng ;
 
   const trimDateTime = (dateTime) => {
     const [date, time] = dateTime.split('T');
@@ -56,8 +57,12 @@ function AddBus() {
   console.log(drivers);
 
   const handleCreate = async () => {
+
     setLoading(true);
-    try {
+    if(busNo=='' || model=='' || current_latitude==''|| current_longitude==''|| from==''|| to=='' || driver==''|| time==''||date=='' ){
+      alert('Please enter all fields')
+    }
+ else{   try {
       const data = {
         busNo: busNo.toUpperCase(),
         model: busType.toUpperCase(),
@@ -77,8 +82,9 @@ function AddBus() {
       }
     } catch (error) {
       setLoading(false);
-      alert('Failed to add bus');
+      alert('Failed to add bus:' +error);
       console.error(error);
+    }
     }
   };
 

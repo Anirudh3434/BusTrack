@@ -126,15 +126,20 @@ function HomeScreen() {
             <h3>{Bus.From} <FaArrowRightLong /> {Bus.To}</h3>
             <h3>Driver: {Bus.driver.driver_name}</h3>
           </div>
-          <MapContainer center={[Bus.current_lat, Bus.current_long]} zoom={zoom} className='maps'>
-            <TileLayer
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            />
-            <Marker position={[Bus.current_lat, Bus.current_long]}>
-              <Popup>Your current location</Popup>
-            </Marker>
-          </MapContainer>
+
+          {Bus.current_lat && Bus.current_long ? (
+            <MapContainer center={[Bus.current_lat, Bus.current_long]} zoom={zoom} className='maps'>
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              <Marker position={[Bus.current_lat, Bus.current_long]}>
+                <Popup>Your current location</Popup>
+              </Marker>
+            </MapContainer>
+          ) : (
+            <p>The bus has not started yet or location data is unavailable.</p>
+          )}
         </div>
       )}
 
